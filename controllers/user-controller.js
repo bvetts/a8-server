@@ -47,14 +47,18 @@ const findUserById = (req, res) => {
 
 
 
+
 const findAllUsers = (req, res) => {
 //this doesnt work
-   // const type = req.query.type;
-    //if(type) {
-   //     res.json(findUsersByType(type));
-   //     return;
-    //}
+    const type = req.query.type;
+    if(type) {
+        res.json(users.filter(function(item){return item.type == type}));//users.filter(findUsersByType)
+        return;
+    }
     res.json(users);
 }
+
+
+
 
 export default userController;
