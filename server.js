@@ -7,13 +7,8 @@ const app = express();
 app.use(cors());
 //mongodb+srv://webdevMongo:<password>@cluster0.ev2yx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-//const CONNECTION_STRING = 'mongodb+srv://webdevMongo:webdevMongo@cluster0.ev2yx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const CONNECTION_STRING = 'mongodb+srv://webdevMongo:webdevMongo@cluster0.ev2yx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
  //|| 'mongodb://localhost:27017/webdev'
-//mongoose.connect(CONNECTION_STRING);
-
-
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
- || 'mongodb://localhost:27017/webdev'
 mongoose.connect(CONNECTION_STRING);
 
 //mongoose.connect('mongodb://localhost:27017/webdev');
