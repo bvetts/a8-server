@@ -1,4 +1,4 @@
-let tuits = require('./tuits.json');
+//let tuits = require('./tuits.json');
 
 const tuitsDao = require('../../database/tuits/tuits-dao.js');
 
