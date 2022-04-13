@@ -38,6 +38,6 @@ require("./controllers/tuits-controller/index")(app);
 //   response.send("Hello World");
 // });
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000)
 //app.listen(4000);
 
